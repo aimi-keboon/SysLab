@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibe Coding for Business | SysLab</title>
+    <title>3 Days to Build Your System | All-Inclusive Coding Program | SysLab</title>
     <style>
         * {
             margin: 0;
@@ -117,10 +117,36 @@
         }
 
         .hero-subtitle {
-            font-size: 1.25rem;
+            font-size: 1.4rem;
+            color: #00d4ff;
+            max-width: 700px;
+            margin: 0 auto 1rem;
+            font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
             color: #b3b3b3;
             max-width: 600px;
             margin: 0 auto 2rem;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            padding: 0.5rem 1rem;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 25px;
+            color: #00d4ff;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
 
         .hero-cta {
@@ -165,9 +191,10 @@
             transform: translateY(-2px);
         }
 
-        /* Program Overview */
-        .program-overview {
+        /* What's Included Section */
+        .whats-included {
             padding: 5rem 1rem;
+            background: rgba(0, 0, 0, 0.2);
         }
 
         .container {
@@ -193,20 +220,20 @@
             margin-bottom: 3rem;
         }
 
-        .overview-grid {
+        .included-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
 
-        .overview-card {
+        .included-card {
             padding: 2rem;
             text-align: center;
             transition: transform 0.3s ease;
         }
 
-        .overview-card:hover {
+        .included-card:hover {
             transform: translateY(-5px);
         }
 
@@ -221,20 +248,19 @@
             margin: 0 auto 1.5rem;
         }
 
-        .overview-card h3 {
+        .included-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: #ffffff;
         }
 
-        .overview-card p {
+        .included-card p {
             color: #b3b3b3;
         }
 
         /* Journey Section */
         .journey {
             padding: 5rem 1rem;
-            background: rgba(0, 0, 0, 0.2);
         }
 
         .journey-timeline {
@@ -292,6 +318,58 @@
             left: 0;
             color: #00d4ff;
             font-weight: bold;
+        }
+
+        /* Perfect For Section */
+        .perfect-for {
+            padding: 5rem 1rem;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .target-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .target-card {
+            padding: 2rem;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .target-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .target-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #00d4ff;
+        }
+
+        .target-card p {
+            color: #b3b3b3;
+            margin-bottom: 1rem;
+        }
+
+        .target-card ul {
+            list-style: none;
+            color: #ffffff;
+        }
+
+        .target-card ul li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .target-card ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00d4ff;
         }
 
         /* Images */
@@ -360,6 +438,11 @@
                 width: 100%;
                 max-width: 300px;
             }
+            
+            .hero-badges {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         /* Scroll animations */
@@ -377,7 +460,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="glass">
+     <header class="glass">
         <nav>
             <a href="index.html" class="logo">SysLab</a>
             <div class="nav-links">
@@ -392,125 +475,192 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Vibe Coding for Business</h1>
-            <p class="hero-subtitle">Build powerful business systems in 3 days. No coding experience required. Leverage AI and modern tools to save thousands in development costs.</p>
+            <h1>3 Days to Build Your System</h1>
+            <p class="hero-subtitle">No Coding Experience Required</p>
+            <p class="hero-description">Join our immersive, all-inclusive program where you'll create your own working system — guided by experts and powered by AI.</p>
             
-            <img src="workshop-environment.jpg" alt="Workshop Environment" class="hero-image">
+            <div class="hero-badges">
+                <span class="badge">All Meals Included</span>
+                <span class="badge">Accommodation Provided</span>
+                <span class="badge">Expert Guidance</span>
+                <span class="badge">Take Home Your System</span>
+            </div>
+            
+            <img src="workshop-environment.jpg" alt="Immersive Workshop Environment" class="hero-image">
             
             <div class="hero-cta">
-                <a href="booking.html#pricing" class="btn btn-primary">View Packages</a>
-                <a href="booking.html#register" class="btn btn-secondary">Register Now</a>
+                <a href="booking.html#pricing" class="btn btn-primary">Join the Program - From RM 1,190</a>
+                <a href="booking.html#register" class="btn btn-secondary">Ask Questions</a>
             </div>
         </div>
     </section>
 
-    <!-- Program Overview -->
-    <section id="program" class="program-overview">
+    <!-- What's Included -->
+    <section id="program" class="whats-included">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Transform Your Business Operations</h2>
-            <p class="section-subtitle animate-on-scroll">Learn to build professional systems using GitHub, Apps Script, HTML/CSS/JS, and Google Workspace</p>
+            <h2 class="section-title animate-on-scroll">All-Inclusive Learning Experience</h2>
+            <p class="section-subtitle animate-on-scroll">Focus on learning while we handle everything else</p>
             
-            <div class="overview-grid">
-                <div class="overview-card glass animate-on-scroll">
+            <div class="included-grid">
+                <div class="included-card glass animate-on-scroll">
                     <div class="card-icon">
                         <svg width="30" height="30" fill="white" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
                     </div>
-                    <h3>Save Development Costs</h3>
-                    <p>Build systems yourself instead of paying thousands to developers. Learn tools that integrate seamlessly with your existing workflow.</p>
+                    <h3>Expert-Led Sessions</h3>
+                    <p>Learn from industry professionals with personalized guidance throughout your 3-day journey.</p>
                 </div>
 
-                <div class="overview-card glass animate-on-scroll">
+                <div class="included-card glass animate-on-scroll">
+                    <div class="card-icon">
+                        <svg width="30" height="30" fill="white" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Accommodation & Meals</h3>
+                    <p>Comfortable lodging and all meals provided so you can focus entirely on learning and building.</p>
+                </div>
+
+                <div class="included-card glass animate-on-scroll">
                     <div class="card-icon">
                         <svg width="30" height="30" fill="white" viewBox="0 0 24 24">
                             <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                         </svg>
                     </div>
-                    <h3>AI-Powered Solutions</h3>
-                    <p>Leverage modern AI tools to accelerate your development process and create sophisticated business automation.</p>
+                    <h3>AI-Powered Tools</h3>
+                    <p>Access to cutting-edge AI tools that make system building fast, intuitive, and accessible to everyone.</p>
                 </div>
 
-                <div class="overview-card glass animate-on-scroll">
+                <div class="included-card glass animate-on-scroll">
                     <div class="card-icon">
                         <svg width="30" height="30" fill="white" viewBox="0 0 24 24">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22,4 12,14.01 9,11.01"/>
+                            <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2-7H5v2h14V4zM6 19c0 1.1.9 2 2 2h8c0-1.1-.9-2-2-2H6z"/>
                         </svg>
                     </div>
-                    <h3>Real Results</h3>
-                    <p>Walk away with functional systems ready for immediate implementation in your business operations.</p>
+                    <h3>Your Working System</h3>
+                    <p>Leave with a fully functional system ready for immediate implementation in your business or projects.</p>
                 </div>
             </div>
 
-            <img src="participants-coding-session.jpg" alt="Participants Working on Systems" class="section-image">
+            <img src="participants-coding-session.jpg" alt="Participants Building Systems Together" class="section-image">
+        </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="perfect-for">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Perfect For</h2>
+            <p class="section-subtitle animate-on-scroll">Whether you're starting fresh or scaling up</p>
+            
+            <div class="target-grid">
+                <div class="target-card glass-light animate-on-scroll">
+                    <h3>Students & Young Professionals</h3>
+                    <p>Age 18-30 looking to gain practical tech skills that employers value.</p>
+                    <ul>
+                        <li>Build portfolio projects</li>
+                        <li>Learn in-demand automation skills</li>
+                        <li>Network with like-minded peers</li>
+                    </ul>
+                </div>
+
+                <div class="target-card glass-light animate-on-scroll">
+                    <h3>Entrepreneurs & Business Owners</h3>
+                    <p>Save thousands on development costs by building systems yourself.</p>
+                    <ul>
+                        <li>Automate repetitive tasks</li>
+                        <li>Create customer management systems</li>
+                        <li>Build without hiring developers</li>
+                    </ul>
+                </div>
+
+                <div class="target-card glass-light animate-on-scroll">
+                    <h3>Busy Professionals</h3>
+                    <p>Want immersive learning without online course distractions.</p>
+                    <ul>
+                        <li>Intensive 3-day format</li>
+                        <li>Hands-on, practical learning</li>
+                        <li>Immediate, tangible results</li>
+                    </ul>
+                </div>
+
+                <div class="target-card glass-light animate-on-scroll">
+                    <h3>Tech-Curious Beginners</h3>
+                    <p>Interested in AI and automation but intimidated by traditional coding.</p>
+                    <ul>
+                        <li>No prior experience needed</li>
+                        <li>AI-assisted development</li>
+                        <li>Supportive learning environment</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Journey Section -->
     <section id="journey" class="journey">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Your 3-Day Journey</h2>
-            <p class="section-subtitle animate-on-scroll">A structured path from concept to deployed business systems</p>
+            <h2 class="section-title animate-on-scroll">Your 3-Day Immersive Journey</h2>
+            <p class="section-subtitle animate-on-scroll">From idea to working system in just 72 hours</p>
             
             <div class="journey-timeline">
                 <div class="journey-day glass-light animate-on-scroll">
                     <div class="day-number">01</div>
-                    <h3 class="day-title">Foundation & Planning</h3>
-                    <p class="day-content">Master the fundamentals of GitHub, Apps Script, and Google Workspace integration. Identify your business needs and plan your system architecture.</p>
+                    <h3 class="day-title">Foundation & Setup</h3>
+                    <p class="day-content">Master GitHub, Apps Script, and Google Workspace fundamentals. Set up your development environment and plan your system architecture.</p>
                     <ul class="day-benefits">
-                        <li>GitHub repository setup and version control</li>
-                        <li>Google Workspace API fundamentals</li>
-                        <li>System architecture planning</li>
-                        <li>AI tool integration basics</li>
+                        <li>GitHub repository and version control</li>
+                        <li>Google Workspace API basics</li>
+                        <li>Project planning and architecture</li>
+                        <li>AI tool integration introduction</li>
                     </ul>
                 </div>
 
                 <div class="journey-day glass-light animate-on-scroll">
                     <div class="day-number">02</div>
-                    <h3 class="day-title">Build & Integrate</h3>
-                    <p class="day-content">Develop your business systems using HTML, CSS, JavaScript, and Apps Script. Create seamless integrations with your existing tools.</p>
+                    <h3 class="day-title">Build & Connect</h3>
+                    <p class="day-content">Develop your system using HTML, CSS, JavaScript, and Apps Script. Create seamless integrations and implement core functionality.</p>
                     <ul class="day-benefits">
-                        <li>Interactive web interfaces</li>
-                        <li>Database connectivity</li>
-                        <li>Workflow automation</li>
+                        <li>Frontend interface development</li>
+                        <li>Database setup and connectivity</li>
+                        <li>Workflow automation implementation</li>
                         <li>Real-time data processing</li>
                     </ul>
                 </div>
 
                 <div class="journey-day glass-light animate-on-scroll">
                     <div class="day-number">03</div>
-                    <h3 class="day-title">Deploy & Optimize</h3>
-                    <p class="day-content">Launch your systems, implement security best practices, and optimize for performance. Learn maintenance and scaling strategies.</p>
+                    <h3 class="day-title">Deploy & Perfect</h3>
+                    <p class="day-content">Launch your system to production, implement security measures, optimize performance, and plan for future growth.</p>
                     <ul class="day-benefits">
                         <li>Production deployment</li>
-                        <li>Security implementation</li>
+                        <li>Security best practices</li>
                         <li>Performance optimization</li>
-                        <li>Maintenance planning</li>
+                        <li>Maintenance and scaling strategy</li>
                     </ul>
                 </div>
             </div>
 
-            <img src="training-venue-setup.jpg" alt="Training Venue and Setup" class="section-image">
+            <img src="training-venue-setup.jpg" alt="Collaborative Learning Environment" class="section-image">
         </div>
     </section>
 
     <!-- Call to Action -->
     <section class="cta-section glass">
         <div class="container">
-            <h2 class="section-title">Ready to Transform Your Business?</h2>
+            <h2 class="section-title">Ready for Your System-Building Program?</h2>
             <p style="font-size: 1.2rem; color: #b3b3b3; margin-bottom: 2rem;">
-                Join the next cohort and start building the systems your business needs to thrive.
+                Join the next cohort and transform your ideas into working systems in just 3 days.
             </p>
-            <a href="booking.html#pricing" class="btn btn-primary">View Packages</a>
-            <a href="booking.html#register" class="btn btn-secondary">Contact Us</a>
+            <a href="booking.html#pricing" class="btn btn-primary">Book Your Program</a>
+            <a href="booking.html#register" class="btn btn-secondary">Have Questions?</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 SysLab. Empowering businesses through technology education.</p>
+            <p>&copy; 2025 SysLab. Empowering through immersive technology education.</p>
         </div>
     </footer>
 
